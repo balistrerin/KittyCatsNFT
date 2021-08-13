@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/KittyCatsNFT/precache-manifest.4703a4b9b27ce790a69c22fc73b19603.js"
+  "/KittyCatsNFT/precache-manifest.8935589beae268a7d1322c798df69b0b.js"
 );
 
 workbox.clientsClaim();
