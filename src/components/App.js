@@ -5,6 +5,35 @@ import KittyCat from '../abis/KittyCat.json'
 import audio from '../meow.mp3';
 
 
+import { useState, useEffect } from 'react'
+
+const [account, setAccount] = useState(null)
+let [web3, setWeb3] = useState(null)
+useEffect(() => {
+  checkAccount()
+}, [])
+
+// invoke to connect to wallet account
+async function activate() {
+  if (window.ethereum) {
+    try {
+      await window.ethereum.request({ method: 'eth_requestAccounts' });
+      checkAccount()
+    } catch (err) {
+      console.log('user did not add account...', err)
+    }
+  }
+}
+
+// invoke to check if account is already connected
+async function checkAccount() {
+  let web3 = new Web3(window.ethereum)
+  setWeb3(web3)
+  const accounts = await web3.eth.getAccounts()
+  setAccount(accounts[0])
+}
+
+
 class App extends Component {
 
   async componentWillMount() {
