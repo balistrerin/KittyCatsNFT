@@ -27,12 +27,16 @@ class App extends Component {
 
   async loadBlockchainData() {
     const web3 = window.web3
+    
     // Load account
     const accounts = await web3.eth.getAccounts()
+    console.log(accounts)
     this.setState({ account: accounts[0] })
 
     const networkId = await web3.eth.net.getId()
+
     const networkData = KittyCat.networks[networkId]
+    console.log(networkData)
     if(networkData) {
       const abi = KittyCat.abi
       const address = networkData.address
