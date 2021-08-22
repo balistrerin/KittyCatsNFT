@@ -984,10 +984,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1871,
-                        1872
+                        1893,
+                        1894
                       ],
-                      "referencedDeclaration": 1872,
+                      "referencedDeclaration": 1894,
                       "src": "1888:7:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1396,10 +1396,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1871,
-                        1872
+                        1893,
+                        1894
                       ],
-                      "referencedDeclaration": 1872,
+                      "referencedDeclaration": 1894,
                       "src": "2680:7:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1622,7 +1622,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1903,
+                        "referencedDeclaration": 1925,
                         "src": "3259:5:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_ERC721Enumerable_$1335",
@@ -1965,7 +1965,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1903,
+                        "referencedDeclaration": 1925,
                         "src": "3733:5:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_ERC721Enumerable_$1335",
@@ -2264,7 +2264,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1903,
+                        "referencedDeclaration": 1925,
                         "src": "4207:5:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_ERC721Enumerable_$1335",
@@ -5257,10 +5257,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                1871,
-                                1872
+                                1893,
+                                1894
                               ],
-                              "referencedDeclaration": 1872,
+                              "referencedDeclaration": 1894,
                               "type": "function (bool,string memory) pure",
                               "value": "require"
                             },
@@ -5701,10 +5701,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                1871,
-                                1872
+                                1893,
+                                1894
                               ],
-                              "referencedDeclaration": 1872,
+                              "referencedDeclaration": 1894,
                               "type": "function (bool,string memory) pure",
                               "value": "require"
                             },
@@ -6039,7 +6039,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1903,
+                                  "referencedDeclaration": 1925,
                                   "type": "contract super ERC721Enumerable",
                                   "value": "super"
                                 },
@@ -6403,7 +6403,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1903,
+                                  "referencedDeclaration": 1925,
                                   "type": "contract super ERC721Enumerable",
                                   "value": "super"
                                 },
@@ -6735,7 +6735,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1903,
+                                  "referencedDeclaration": 1925,
                                   "type": "contract super ERC721Enumerable",
                                   "value": "super"
                                 },
@@ -9214,7 +9214,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.2",
-  "updatedAt": "2021-08-13T04:48:56.540Z",
+  "updatedAt": "2021-08-22T06:19:24.614Z",
   "devdoc": {
     "details": "See https://eips.ethereum.org/EIPS/eip-721",
     "methods": {

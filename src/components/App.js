@@ -4,8 +4,17 @@ import './App.css';
 import KittyCat from '../abis/KittyCat.json'
 import audio from '../meow.mp3';
 
-
 class App extends Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      account: '',
+      contract: null,
+      totalSupply: 0,
+      kitties: []
+    }
+  }
 
   async componentWillMount() {
     await this.loadWeb3()
@@ -30,13 +39,11 @@ class App extends Component {
     
     // Load account
     const accounts = await web3.eth.getAccounts()
-    console.log(accounts)
     this.setState({ account: accounts[0] })
 
     const networkId = await web3.eth.net.getId()
 
     const networkData = KittyCat.networks[networkId]
-    console.log(networkData)
     if(networkData) {
       const abi = KittyCat.abi
       const address = networkData.address
@@ -64,6 +71,7 @@ class App extends Component {
         kitties: [...this.state.kitties, kitty]
       })
     })
+    this.state.contract.methods.STUI(0,"https://anterrisbucket.s3.amazonaws.com/{kitty}.json").transact() 
   }
 
   CatName = (theCatId)=>{ 
@@ -77,15 +85,7 @@ class App extends Component {
     new Audio(audio).play();
   }
 
-  constructor(props) {
-    super(props)
-    this.state = {
-      account: '',
-      contract: null,
-      totalSupply: 0,
-      kitties: []
-    }
-  }
+ 
 
   render() {
     return (
@@ -114,6 +114,8 @@ class App extends Component {
                   event.preventDefault()
                   const kitty = this.kitty.value
                   this.mint(kitty)
+                  fetch(`https://anterris.com/kittycatmeta.php?name=${kitty}`).then((res) => console.log(res));
+
                   
                 }}>
                   <input

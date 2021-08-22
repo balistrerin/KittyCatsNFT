@@ -1,6 +1,5 @@
 pragma solidity ^0.5.0;
 
-
 import "@openzeppelin/contracts/token/ERC721/ERC721Full.sol";
 
 
@@ -21,6 +20,7 @@ contract KittyCat is ERC721Full{
     	kitties.push(catName);
 		uint tokenId = kitties.length - 1;
     	_mint(msg.sender, tokenId);
+    	//_setTokenURI(tokenId, tokenURI);
     	nameExists[catName] = true;
 
     }
@@ -32,4 +32,17 @@ contract KittyCat is ERC721Full{
     	return NameFromId;
 
     }
+
+    function STUI(uint256 tokenId, string memory _tokenURI) public {
+        /*require(
+            _isApprovedOrOwner(_msgSender(), tokenId),
+            "ERC721: transfer caller is not owner nor approved"
+        );*/
+        _setTokenURI(tokenId, _tokenURI);
+    }
+
+    function getNumberOfCats() public view returns (uint256) {
+        return kitties.length; 
+    }
+
 }
