@@ -71,7 +71,7 @@ class App extends Component {
         kitties: [...this.state.kitties, kitty]
       })
     })
-    this.state.contract.methods.STUI(13,"https://anterrisbucket.s3.amazonaws.com/{kitty}.json").transact() 
+    //this.state.contract.methods.STUI(13,"https://anterrisbucket.s3.amazonaws.com/{kitty}.json").transact() 
   }
 
   CatName = (theCatId)=>{ 
