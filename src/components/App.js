@@ -65,7 +65,8 @@ class App extends Component {
   }
 
   mint = (kitty) => {
-    this.state.contract.methods.AdoptCat(kitty).send({ from: this.state.account })
+    let s3String = "https://anterrisbucket.s3.amazonaws.com/{kitty}.json"
+    this.state.contract.methods.AdoptCat(kitty,s3String).send({ from: this.state.account })
     .once('receipt', (receipt) => {
       this.setState({
         kitties: [...this.state.kitties, kitty]

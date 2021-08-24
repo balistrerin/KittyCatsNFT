@@ -13,14 +13,14 @@ contract KittyCat is ERC721Full{
 	constructor() ERC721Full("KittyCats", "CAT") public {
     }
 
-    function AdoptCat(string memory catName) public {
+    function AdoptCat(string memory catName, string memory tokenURI) public {
 
     	require(!nameExists[catName]);
     	//uint tokenId = kitties.push(catName);
     	kitties.push(catName);
 		uint tokenId = kitties.length - 1;
     	_mint(msg.sender, tokenId);
-    	//_setTokenURI(tokenId, tokenURI);
+    	_setTokenURI(tokenId, tokenURI);
     	nameExists[catName] = true;
 
     }
