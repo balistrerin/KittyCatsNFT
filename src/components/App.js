@@ -98,11 +98,11 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Kitty Cat Tokenss
+            Kitty Cat Tokens
           </a>
           <ul className="navbar-nav px-3">
             <li className="nav-item text-nowrap d-none d-sm-none d-sm-block">
-              <small className="text-white"><span id="account">Account:{this.state.account}</span></small>
+              <small className="text-white"><span id="account">Account: {this.state.account}</span></small>
             </li>
           </ul>
         </nav>
