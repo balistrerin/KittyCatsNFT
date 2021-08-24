@@ -2989,7 +2989,7 @@
     }
   },
   "schemaVersion": "3.4.2",
-  "updatedAt": "2021-08-24T04:29:32.396Z",
+  "updatedAt": "2021-08-24T04:55:55.618Z",
   "devdoc": {
     "methods": {
       "approve(address,uint256)": {
