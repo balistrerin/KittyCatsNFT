@@ -67,8 +67,8 @@ class App extends Component {
 
   mint = (kitty) => {
     fetch(`https://anterris.com/kittycatmeta.php?name=${kitty}`).then((res) => console.log(res));
-    //var s3String = `https://anterrisbucket.s3.amazonaws.com/${kitty}.json`;
-    this.state.contract.methods.AdoptCat(kitty,res).send({ from: this.state.account })
+    var s3String = `https://anterrisbucket.s3.amazonaws.com/${kitty}.json`;
+    this.state.contract.methods.AdoptCat(kitty,s3String).send({ from: this.state.account })
     .once('receipt', (receipt) => {
       this.setState({
         kitties: [...this.state.kitties, kitty]
@@ -129,7 +129,7 @@ class App extends Component {
                   <input
                     type='submit'
                     className='btn btn-block btn-primary'
-                    onClick={this.playAudio}
+                    //onClick={this.playAudio}
                     value='Adopt'
                   />
                 </form>
