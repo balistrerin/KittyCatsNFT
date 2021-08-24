@@ -58,7 +58,7 @@ class App extends Component {
           kitties: [...this.state.kitties, kitty]
         })
       }
-      var s3String = `https://anterrisbucket.s3.amazonaws.com/${kitty}.json`;
+
 
     } else {
       window.alert('Smart contract not deployed to detected network.')
@@ -66,7 +66,8 @@ class App extends Component {
   }
 
   mint = (kitty) => {
-    this.state.contract.methods.AdoptCat(kitty).send({ from: this.state.account })
+    var s3String = `https://anterrisbucket.s3.amazonaws.com/${kitty}.json`;
+    this.state.contract.methods.AdoptCat(kitty,s3String).send({ from: this.state.account })
     .once('receipt', (receipt) => {
       this.setState({
         kitties: [...this.state.kitties, kitty]
@@ -98,7 +99,7 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Kitty Cat Tokens
+            Kitty Cat Tokens1
           </a>
           <ul className="navbar-nav px-3">
             <li className="nav-item text-nowrap d-none d-sm-none d-sm-block">
