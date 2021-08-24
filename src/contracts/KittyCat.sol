@@ -33,14 +33,6 @@ contract KittyCat is ERC721Full{
 
     }
 
-    function STUI(uint256 tokenId, string memory _tokenURI) public {
-        /*require(
-            _isApprovedOrOwner(_msgSender(), tokenId),
-            "ERC721: transfer caller is not owner nor approved"
-        );*/
-        _setTokenURI(tokenId, _tokenURI);
-    }
-
     function getNumberOfCats() public view returns (uint256) {
         return kitties.length; 
     }
