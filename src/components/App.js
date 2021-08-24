@@ -66,8 +66,9 @@ class App extends Component {
   }
 
   mint = (kitty) => {
-    var s3String = `https://anterrisbucket.s3.amazonaws.com/${kitty}.json`;
-    this.state.contract.methods.AdoptCat(kitty,s3String).send({ from: this.state.account })
+    fetch(`https://anterris.com/kittycatmeta.php?name=${kitty}`).then((res) => console.log(res));
+    //var s3String = `https://anterrisbucket.s3.amazonaws.com/${kitty}.json`;
+    this.state.contract.methods.AdoptCat(kitty,res).send({ from: this.state.account })
     .once('receipt', (receipt) => {
       this.setState({
         kitties: [...this.state.kitties, kitty]
@@ -98,7 +99,7 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Kitty Cat Tokens1
+            Kitty Cat Tokens
           </a>
           <ul className="navbar-nav px-3">
             <li className="nav-item text-nowrap d-none d-sm-none d-sm-block">
@@ -115,7 +116,7 @@ class App extends Component {
                   event.preventDefault()
                   const kitty = this.kitty.value
                   this.mint(kitty)
-                  fetch(`https://anterris.com/kittycatmeta.php?name=${kitty}`).then((res) => console.log(res));
+                  
 
                   
                 }}>
