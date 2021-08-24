@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "0705c8c0688f20a7c8fe",
+    "revision": "b9da139a13a6c4a041be",
     "url": "/KittyCatsNFT/static/css/main.9381cb55.chunk.css"
   },
   {
-    "revision": "0705c8c0688f20a7c8fe",
-    "url": "/KittyCatsNFT/static/js/main.0705c8c0.chunk.js"
+    "revision": "b9da139a13a6c4a041be",
+    "url": "/KittyCatsNFT/static/js/main.b9da139a.chunk.js"
   },
   {
     "revision": "f234853260d96f48ab87",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/KittyCatsNFT/static/media/meow.0771acf3.mp3"
   },
   {
-    "revision": "98825c92a61cd79ade8a4a02effc2f32",
+    "revision": "63c50d7005dc81f40fe5c012e2855a6b",
     "url": "/KittyCatsNFT/index.html"
   }
 ];

@@ -1,7 +1,7 @@
 {
   "main.css": "/KittyCatsNFT/static/css/main.9381cb55.chunk.css",
-  "main.js": "/KittyCatsNFT/static/js/main.0705c8c0.chunk.js",
-  "main.js.map": "/KittyCatsNFT/static/js/main.0705c8c0.chunk.js.map",
+  "main.js": "/KittyCatsNFT/static/js/main.b9da139a.chunk.js",
+  "main.js.map": "/KittyCatsNFT/static/js/main.b9da139a.chunk.js.map",
   "static/css/1.dd8e08aa.chunk.css": "/KittyCatsNFT/static/css/1.dd8e08aa.chunk.css",
   "static/js/1.f2348532.chunk.js": "/KittyCatsNFT/static/js/1.f2348532.chunk.js",
   "static/js/1.f2348532.chunk.js.map": "/KittyCatsNFT/static/js/1.f2348532.chunk.js.map",
@@ -11,6 +11,6 @@
   "static/css/main.9381cb55.chunk.css.map": "/KittyCatsNFT/static/css/main.9381cb55.chunk.css.map",
   "static/css/1.dd8e08aa.chunk.css.map": "/KittyCatsNFT/static/css/1.dd8e08aa.chunk.css.map",
   "index.html": "/KittyCatsNFT/index.html",
-  "precache-manifest.bdf8f3c917e5f2b27e7f32025b0fecc1.js": "/KittyCatsNFT/precache-manifest.bdf8f3c917e5f2b27e7f32025b0fecc1.js",
+  "precache-manifest.248367b72e432f4378c21b257e36565b.js": "/KittyCatsNFT/precache-manifest.248367b72e432f4378c21b257e36565b.js",
   "service-worker.js": "/KittyCatsNFT/service-worker.js"
 }
